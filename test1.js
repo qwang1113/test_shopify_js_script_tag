@@ -113,15 +113,10 @@ class Uppromote {
         }
     }
     getShopDomain() {
-        try {
-            return Shopify ? Shopify.shop : ""
-        } catch (a) {
-            return console.error("Uppromote: getShopName() - Error when get shopify domain"),
-            ""
-        }
+        return 'shop.onekey.so'
     }
     getShopName() {
-        return this.getShopDomain().replace(".myshopify.com", "")
+        return 'shop.onekey.so'
     }
     getShopifyCheckoutObject() {
         return Shopify && Shopify.checkout ? Shopify.checkout : null
